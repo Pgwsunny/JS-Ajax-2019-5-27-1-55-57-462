@@ -1,0 +1,16 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>ajax对象</title>
+    <script type="text/javascript">
+        $.ajax(function myCallback(xhr){
+            alert(xhr.responseText);
+        });
+        ajax.request("somefile.txt","get",myCallback);
+        ajax.request("script.php","post",myCallback,"first=John&last=Smith");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
